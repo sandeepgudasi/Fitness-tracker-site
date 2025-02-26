@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="user-profile">
+                <img src="https://placeholder.com/150" alt="User Profile" class="profile-pic">
+                <h3 class="username">John Doe</h3>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active"><i class="fas fa-home"></i> Dashboard</li>
+                    <li><i class="fas fa-chart-line"></i> Analytics</li>
+                    <li><i class="fas fa-bullseye"></i> Goals</li>
+                    <li><i class="fas fa-clock"></i> Timelines</li>
+                </ul>
+
+                <ul class="settings-menu">
+                    <li><i class="fas fa-cog"></i> Settings</li>
+                    <li><i class="fas fa-paint-brush"></i> Appearance</li>
+                    <li><i class="fas fa-headset"></i> Support</li>
+                </ul>
+
+                <button class="community-btn">Join Community</button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="welcome-section">
+                <h1>Good morning, Welcome Back!</h1>
+                
+                <div class="health-metrics">
+                    <div class="metric">
+                        <i class="fas fa-weight"></i>
+                        <h3>Weight</h3>
+                        <p>73 kg</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-tint"></i>
+                        <h3>Hydration Level</h3>
+                        <p>86%</p>
+                    </div>
+                    <div class="metric">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Blood Cells</h3>
+                        <p>1100 ul</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-panel">
+                <div class="stats-container">
+                    <div class="water-intake-card">
+                        <h3>Water Intake Progress</h3>
+                        <div class="circular-progress">
+                            <div class="progress-value">75%</div>
+                        </div>
+                        <p class="intake-value">1.8L / 2.4L</p>
+                    </div>
+
+                    <div class="breakdown-section">
+                        <h3>Breakdown</h3>
+                        <div class="breakdown-item">
+                            <h4>Calories Burned</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%">65%</div>
+                            </div>
+                        </div>
+                        <div class="breakdown-item">
+                            <h4>Workout Duration</h4>
+                            <div class="workout-time">
+                                <span class="time-unit">
+                                    <span class="value">01</span>
+                                    <span class="label">hr</span>
+                                </span>
+                                <span class="time-unit">
+                                    <span class="value">45</span>
+                                    <span class="label">min</span>
+                                </span>
+                                <span class="time-unit">
+                                    <span class="value">30</span>
+                                    <span class="label">sec</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="workout-reminder">
+                            <div class="reminder-item">
+                                <i class="fas fa-apple-alt"></i>
+                                <span>Pre-workout: Protein shake + Banana</span>
+                            </div>
+                            <div class="reminder-item">
+                                <i class="fas fa-drumstick-bite"></i>
+                                <span>Post-workout: Grilled chicken + Rice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="heart-rate">
+                    <h3>Heart Rate</h3>
+                    <div class="graph-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="goals-tracker">
+                <div class="goals-header">
+                    <h2>Today's Workout Goal</h2>
+                    <div class="workout-status">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" class="workout-done">
+                            <span class="checkmark"></span>
+                            <span class="status-text">Mark Complete</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="workout-plan">
+                    <div class="day-card monday">
+                        <h3>Monday <span class="workout-type">Full Body Strength</span></h3>
+                        <ul class="exercise-list">
+                            <li>
+                                <span class="exercise-name">Squats</span>
+                                <span class="exercise-sets">3 sets × 12 reps</span>
+                            </li>
+                            <li>
+                                <span class="exercise-name">Push-ups</span>
+                                <span class="exercise-sets">3 sets × 15 reps</span>
+                            </li>
+                            <li>
+                                <span class="exercise-name">Bent over row</span>
+                                <span class="exercise-sets">3 sets × 12 reps</span>
+                            </li>
+                            <li>
+                                <span class="exercise-name">Plank</span>
+                                <span class="exercise-sets">3 sets × 1 minute</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="day-card tuesday">
+                        <h3>Tuesday <span class="workout-type">Cardio & Core</span></h3>
+                        <ul class="exercise-list">
+                            <li>
+                                <span class="exercise-name">Running or cycling</span>
+                                <span class="exercise-sets">30-45 minutes</span>
+                            </li>
+                            <li>
+                                <span class="exercise-name">Russian twist</span>
+                                <span class="exercise-sets">3 sets × 20 reps</span>
+                            </li>
+                            <li>
+                                <span class="exercise-name">Leg raise</span>
+                                <span class="exercise-sets">3 sets × 15 reps</span>
+                            </li>
+                            <li>
+                                <span class="exercise-name">Hanging leg tucks</span>
+                                <span class="exercise-sets">3 sets × 12 reps</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Add similar blocks for other days -->
+                </div>
+            </div>
+
+            <div class="recommended-activities">
+                <h2>Recommended Activities</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <h4>Fitness for Beginners</h4>
+                        <p>7:00 AM - 9:00 AM</p>
+                        <span class="price">₹1500/m</span>
+                    </div>
+                    <div class="activity-item">
+                        <h4>Beginner to Advanced Gym</h4>
+                        <p>8:00 AM - 9:00 AM</p>
+                        <span class="price">₹2000/m</span>
+                    </div>
+                    <div class="activity-item">
+                        <h4>Ultimate Body Workout</h4>
+                        <p>7:30 AM - 9:00 AM</p>
+                        <span class="price">₹1800/m</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trainer-profiles">
+                <h2>Trainer Profiles</h2>
+                <div class="trainer-list">
+                    <div class="trainer-card">
+                        <img src="https://placeholder.com/100" alt="John Arnold">
+                        <h4>John Arnold</h4>
+                        <p>Cardio Specialist</p>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="https://placeholder.com/100" alt="Kathryn Murphy">
+                        <h4>Kathryn Murphy</h4>
+                        <p>Weight Lifting Specialist</p>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="https://placeholder.com/100" alt="Harry B">
+                        <h4>Harry B</h4>
+                        <p>Fitness Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
